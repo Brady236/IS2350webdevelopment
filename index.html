@@ -14,10 +14,36 @@
   <p>Web passion!</p>
   
 </div>
-<div class="containe p-5 bg-primary text-white text-center">
+<div class="container p-5 bg-primary text-white text-center">
+    <h2>Current position</h2>
+    <p>Student at Indiana Tech and athlete</p>
+  </div>
 
-  <h2>Current position</h2>
-  <p>Student at indiana tech and athlete</p>
-</div>
+  <section class="container my-5">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Contact me</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents page reload
+
+      const name = document.getElementById('fullName').value;
+      const msg = document.getElementById('message').value;
+
+      console.log("Guest Name:", name);
+      console.log("Message:", msg);
+    });
+  </script>
 </body>
 </html>
