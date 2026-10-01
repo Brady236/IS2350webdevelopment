@@ -1,8 +1,9 @@
-import  { Header, Summary, Experience, Education, Skills } from "./Resume";
+import Resume from './Resume';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World React!</h1>
+    <div>
+      <Resume />
     </div>
   );
 }
